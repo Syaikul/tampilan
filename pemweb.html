@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+    <style type="text/css">
+        body {
+            background-image: radial-gradient(#3a6073 5%, transparent 5%), radial-gradient(#c8e3f1 5%, transparent 5%);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            font-family: "Open Sans", "Arial"
+        }
+        a{
+            text-decoration:none;
+            color: #000;
+        }
+        a:hover{
+            color: #B7977B;
+        }
+        img { 
+            width : 150px;
+            height : 150px;
+            position: relative;
+            left: 350px;
+        }
+        main {
+            background: rgb(37, 37, 37);
+            width: 500px;
+            height: 500px;
+            margin:50px auto;
+            padding: 10px 30px 80px;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+            border-radius: 20px;
+            color: white;
+        }
+        p {
+            font-size: 13px;
+        }
+        /* Important code */
+        input, section {
+            clear: both;
+            text-align: justify;
+            padding-top: 10px;
+            display: none;
+            font-family: "Montserrat", "Arial";
+        }
+        label {
+            position: relative;
+            left: 35px;
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+            float: left;
+            padding: 10px 30px;
+            border-top: 2px solid transparent;
+            border-right: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-bottom: 100px solid #DDD;
+        }
+        label:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            background-color: silver;
+        }
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2,
+        #tab3:checked ~ #content3,
+        #tab4:checked ~ #content4 {
+            display: block;
+        }
+        input:checked + label {
+            border-top-color: #B7977B;
+            border-right-color: #DDD;
+            border-left-color: #DDD;
+            border-bottom-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>  
+<main>
+    <h2><center>Tampilan Sederhana</center></h2>
+    <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1">Home</label>
+    <input id="tab2" type="radio" name="tabs">
+        <label for="tab2">About</label>
+    <input id="tab3" type="radio" name="tabs">
+        <label for="tab3">Contact</label>
+    <input id="tab4" type="radio" name="tabs">
+        <label for="tab4">Others</label>
+            
+    <section id="content1">
+        <h3>Selamat Datang di Tampilan Home Website</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aspernatur qui! Dicta, consectetur, at mollitia velit explicabo ex labore modi unde necessitatibus voluptatibus culpa fugiat voluptatum error consequuntur, repellat amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aspernatur qui! Dicta, consectetur, at mollitia velit explicabo ex labore modi unde necessitatibus voluptatibus culpa fugiat voluptatum error consequuntur, repellat amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aspernatur qui! Dicta, consectetur, at mollitia velit explicabo ex labore modi unde necessitatibus voluptatibus culpa fugiat voluptatum error consequuntur, repellat amet.</p>
+        <h4><img src="logo.png" alt="logo"></h4>
+    </section>
+    <section id="content2">
+        <h3>About Web</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo quibusdam minus, laudantium illo eos quos. Aut ipsum voluptate totam ad dolorum voluptates quae accusantium temporibus eaque quaerat, nostrum blanditiis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo quibusdam minus, laudantium illo eos quos. Aut ipsum voluptate totam ad dolorum voluptates quae accusantium temporibus eaque quaerat, nostrum blanditiis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo quibusdam minus, laudantium illo eos quos. Aut ipsum voluptate totam ad dolorum voluptates quae accusantium temporibus eaque quaerat, nostrum blanditiis.</p>
+        </section>
+        <section id="content3">
+            <h3>Contact Web</h3>
+            <p>berikut adalah kontak dari website ini</p>
+            <p> Email: syaikulibnu@gmail.com</p>
+            <p> Facebook: @syaikulibnu</p>
+            <p> Twitter: syaikulibnu</p>
+        </section>
+        <section id="content4">
+         <h3>Others</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo quibusdam minus, laudantium illo eos quos. Aut ipsum voluptate totam ad dolorum voluptates quae accusantium temporibus eaque quaerat, nostrum blanditiis.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo quibusdam minus, laudantium illo eos quos. Aut ipsum voluptate totam ad dolorum voluptates quae accusantium temporibus eaque quaerat, nostrum blanditiis.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo quibusdam minus, laudantium illo eos quos. Aut ipsum voluptate totam ad dolorum voluptates quae accusantium temporibus eaque quaerat, nostrum blanditiis.</p>
+     </section>
+</main>
+</body>
+</html>
